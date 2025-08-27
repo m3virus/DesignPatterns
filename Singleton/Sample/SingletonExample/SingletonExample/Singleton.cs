@@ -12,6 +12,11 @@
 
         public static Singleton Instance => instance;
 
+        private Singleton()
+        {
+            
+        }
+
         public string Connection { get; set; } = "124";
     }
 }

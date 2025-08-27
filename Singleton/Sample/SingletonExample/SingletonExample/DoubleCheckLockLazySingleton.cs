@@ -1,10 +1,15 @@
 ﻿namespace SingletonExample
 {
-    public class DoubleCheckLockLazySingleton
+    public sealed class DoubleCheckLockLazySingleton
     {
-        private static LazySingleton instance;
+        private static DoubleCheckLockLazySingleton instance;
         private static readonly object locker = new object();
-        public static LazySingleton Instance
+
+        private DoubleCheckLockLazySingleton()
+        {
+            
+        }
+        public static DoubleCheckLockLazySingleton Instance
         {
             get
             {
@@ -13,7 +18,7 @@
                 {
                     lock (locker)
                     {
-                        instance = new LazySingleton();
+                        instance = new DoubleCheckLockLazySingleton();
 
                     }
                 }

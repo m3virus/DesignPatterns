@@ -4,10 +4,14 @@
     //we should handle thread safe problem
 
     //better for something like connection string that we won't use in all classes
-    public class LazySingleton
+    public sealed class LazySingleton
     {
         private static LazySingleton instance;
 
+        private LazySingleton()
+        {
+            
+        }
         public static LazySingleton Instance
         {
             get

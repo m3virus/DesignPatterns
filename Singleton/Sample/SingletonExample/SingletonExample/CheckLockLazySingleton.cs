@@ -1,17 +1,22 @@
 ﻿namespace SingletonExample
 {
-    public class CheckLockLazySingleton
+    public sealed class CheckLockLazySingleton
     {
-        private static LazySingleton instance;
+        private static CheckLockLazySingleton instance;
         private static readonly object locker = new object();
-        public static LazySingleton Instance
+
+        private CheckLockLazySingleton()
+        {
+
+        }
+        public static CheckLockLazySingleton Instance
         {
             get
             {
                 lock (locker)
                 {
                     if (instance == null)
-                        instance = new LazySingleton();
+                        instance = new CheckLockLazySingleton();
 
                     return instance;
                 }
