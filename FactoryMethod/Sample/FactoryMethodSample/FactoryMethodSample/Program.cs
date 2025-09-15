@@ -1,5 +1,5 @@
-﻿using FactoryMethodSample.FactoryMethodOne;
-using FactoryMethodSample.FactoryMethodTwo;
+﻿using FactoryMethodSample.AbstractFactory;
+using FactoryMethodSample.FactoryMethod;
 
 Cat a = new Cat();
 a.Sound();

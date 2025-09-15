@@ -1,4 +1,4 @@
-﻿namespace FactoryMethodSample.FactoryMethodOne
+﻿namespace FactoryMethodSample.FactoryMethod
 {
     internal interface IAnimal
     {
