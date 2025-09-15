@@ -1,6 +1,7 @@
 ﻿using FactoryMethodSample.FactoryMethod;
+using FactoryMethodSample.FactoryMethod2;
 
-namespace FactoryMethodSample.AbstractFactory
+namespace FactoryMethodSample.FactoryMethod2
 {
     internal class Eagle : Bird
     {
