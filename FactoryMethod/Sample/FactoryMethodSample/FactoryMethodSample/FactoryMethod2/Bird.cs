@@ -1,6 +1,6 @@
 ﻿using FactoryMethodSample.FactoryMethod;
 
-namespace FactoryMethodSample.AbstractFactory
+namespace FactoryMethodSample.FactoryMethod2
 {
     internal abstract class Bird
     {
