@@ -1,5 +1,5 @@
 ﻿using Core.Models;
-
+//singleton pattern : lazy initializing
 namespace Core.Services
 {
     public sealed class LoggingSingleton
