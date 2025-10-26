@@ -15,4 +15,10 @@
       <Folder Include="UserManagement\" />
     </ItemGroup>
 
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>
