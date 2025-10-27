@@ -1,8 +1,7 @@
-﻿namespace Core.Services.PaymentServices
+﻿namespace Core.Services.PaymentServices;
+
+public interface IStoreFactory
 {
-    public interface IStoreFactory
-    {
-        public IPaymentService CreatePayment();
-        public IShippingService CreateShipping();
-    }
+    public IPaymentService CreatePayment();
+    public IShippingService CreateShipping();
 }

@@ -1,4 +1,6 @@
-﻿namespace Core.Models.Product;
+﻿using Core.Patterns;
+
+namespace Core.Models.Product;
 
 internal class DigitalProduct : ProductBase
 {

@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Models
+namespace Core.Models;
+
+internal class User
 {
-    internal class User
-    {
-    }
 }

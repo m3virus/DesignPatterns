@@ -1,6 +1,5 @@
-﻿namespace Core.Models.Payment
+﻿namespace Core.Models.Payment;
+
+internal class Shipping
 {
-    internal class Shipping
-    {
-    }
 }

@@ -1,4 +1,6 @@
-﻿namespace Core.Services.PaymentServices;
+﻿using Core.Services.PaymentServices;
+
+namespace Application.Payment;
 
 public class PaypalPayment: IPaymentService
 {

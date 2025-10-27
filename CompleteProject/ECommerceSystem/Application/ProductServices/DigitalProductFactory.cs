@@ -1,6 +1,6 @@
 ﻿using Core.Models.Product;
 
-namespace Core.Services.ProductServices;
+namespace Application.ProductServices;
 
 internal class DigitalProductFactory:ProductFactory
 {

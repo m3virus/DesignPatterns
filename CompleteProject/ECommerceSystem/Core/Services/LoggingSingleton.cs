@@ -1,21 +1,20 @@
 ﻿using Core.Models;
 //singleton pattern : lazy initializing
-namespace Core.Services
+namespace Core.Services;
+
+public sealed class LoggingSingleton
 {
-    public sealed class LoggingSingleton
+    private static readonly Lazy<LoggingSingleton> _instance = new Lazy<LoggingSingleton>(() => new LoggingSingleton());
+    public static LoggingSingleton Instance => _instance.Value;
+
+    private LoggingSingleton()
     {
-        private static readonly Lazy<LoggingSingleton> _instance = new Lazy<LoggingSingleton>(() => new LoggingSingleton());
-        public static LoggingSingleton Instance => _instance.Value;
-
-        private LoggingSingleton()
-        {
             
-        }
-
-        public void Log(string message)
-        {
-            Console.WriteLine($"[{DateTime.Now}]:{message}");
-        }
-
     }
+
+    public void Log(string message)
+    {
+        Console.WriteLine($"[{DateTime.Now}]:{message}");
+    }
+
 }

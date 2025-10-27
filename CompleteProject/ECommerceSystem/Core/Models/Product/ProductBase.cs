@@ -1,4 +1,7 @@
-﻿namespace Core.Models.Product;
+﻿using Core.Patterns;
+
+namespace Core.Models.Product;
+
 //Factory Pattern
 public abstract class ProductBase:ProductPrototype
 {
