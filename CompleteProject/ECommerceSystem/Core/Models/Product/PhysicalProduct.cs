@@ -6,4 +6,9 @@ public class PhysicalProduct: ProductBase
     {
         Console.WriteLine($"You built {base.Name} as physical product");
     }
+
+    public override ProductPrototype Clone()
+    {
+        return (PhysicalProduct)this.MemberwiseClone();
+    }
 }

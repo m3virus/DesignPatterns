@@ -1,12 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using Core.Models;
+using Core.Models.Product;
+//Builder pattern
 namespace Core.Services
 {
-    internal class OrderBuilder
+    public class OrderBuilder
     {
+        private readonly Order _order = new();
+
+        public OrderBuilder SetCustomer(string name)
+        {
+            _order.CustormerName = name;
+            return this;
+        }
+
+        public OrderBuilder SetProduct(ProductBase product, decimal price)
+        {
+            _order.Product.Add(product);
+            _order.TotalPrice += price;
+            return this;
+        }
     }
 }

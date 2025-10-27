@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Core.Models.Product;
 
-namespace Core.Models
+namespace Core.Models;
+
+public class Order
 {
-    internal class Order
-    {
-    }
+    public string CustormerName { get; set; }
+    public List<ProductBase> Product { get; set; } = new ();
+    public decimal TotalPrice { get; set; }
 }
