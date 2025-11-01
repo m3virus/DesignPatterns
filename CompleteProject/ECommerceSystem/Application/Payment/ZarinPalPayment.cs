@@ -4,8 +4,8 @@ namespace Application.Payment;
 
 public class ZarinPalPayment:IPaymentService
 {
-    public void Pay(decimal Amount)
+    public void Pay(decimal amount)
     {
-        Console.WriteLine($"Pay {Amount} with ZarinPal");
+        Console.WriteLine($"Pay {amount} with ZarinPal");
     }
 }

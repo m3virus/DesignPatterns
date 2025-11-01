@@ -4,8 +4,8 @@ namespace Application.Payment;
 
 public class PostShipping:IShippingService
 {
-    public void Ship(string Product)
+    public void Ship(string product)
     {
-        Console.WriteLine($"Your {Product} send by FedEx");
+        Console.WriteLine($"Your {product} send by FedEx");
     }
 }

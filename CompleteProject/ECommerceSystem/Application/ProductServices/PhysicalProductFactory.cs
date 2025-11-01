@@ -4,9 +4,9 @@ namespace Application.ProductServices;
 
 public class PhysicalProductFactory: ProductFactory
 {
-    public override ProductBase CreateProduct(string Name) => new PhysicalProduct
+    public override ProductBase CreateProduct(string name) => new PhysicalProduct
     {
-        Name = Name
+        Name = name
     };
     
 }
