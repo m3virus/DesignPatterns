@@ -1,36 +1,38 @@
-﻿using Core.Models.Product;
+#pragma warning disable SA1200
+using Core.Models.Product;
+#pragma warning restore SA1200
 
 namespace Core.Models;
 
 /// <summary>
-/// نمایانگر یک سفارش شامل محصولات، اطلاعات پرداخت و ارسال.
+/// A class for set a model for orders.
 /// </summary>
 public class Order
 {
     /// <summary>
-    /// Gets or sets list of products in orders
+    /// Gets or sets list of products in orders.
     /// </summary>
     public List<ProductBase> Product { get; set; } = new ();
 
     /// <summary>
-    /// مجموع قیمت کل سفارش.
+    /// Gets or sets total price of the order.
     /// </summary>
     public decimal TotalPrice { get; set; }
 
     /// <summary>
-    /// آدرس ارسال سفارش.
+    /// Gets or sets the address for shipping.
     /// </summary>
-    public string ShippingAddress { get; set; }
+    public string ShippingAddress { get; set; } = string.Empty;
 
     /// <summary>
-    /// روش پرداخت سفارش (مانند کارت، نقدی یا آنلاین).
+    ///  Gets or sets the method for payment.
     /// </summary>
-    public string PaymentMethod { get; set; }
+    public string PaymentMethod { get; set; } = string.Empty;
 
     /// <summary>
-    /// کد تخفیف اعمال شده روی سفارش، در صورت وجود.
+    /// Gets or sets coupon code for discount.
     /// </summary>
-    public string CouponCode { get; set; }
+    public string CouponCode { get; set; } = string.Empty;
 
     /// <summary>
     /// نمایش اطلاعات سفارش به صورت رشته.

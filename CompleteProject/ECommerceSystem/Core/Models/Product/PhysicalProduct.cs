@@ -1,14 +1,19 @@
-﻿using Core.Patterns;
+using Core.Patterns;
 
 namespace Core.Models.Product;
 
-public class PhysicalProduct: ProductBase
+/// <summary>
+/// The model for physical products
+/// </summary>
+public class PhysicalProduct : ProductBase
 {
+    /// <inheritdoc />
     public override void Detail()
     {
-        Console.WriteLine($"You built {base.Name} as physical product");
+        Console.WriteLine($"You built {this.Name} as physical product");
     }
 
+    /// <inheritdoc />
     public override ProductPrototype Clone()
     {
         return (PhysicalProduct)this.MemberwiseClone();

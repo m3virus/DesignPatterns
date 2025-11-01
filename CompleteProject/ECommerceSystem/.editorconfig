@@ -1,0 +1,40 @@
+# top-most EditorConfig file
+root = true
+
+# C# files
+[*.cs]
+
+# Tab/Space settings
+indent_style = space
+indent_size = 4
+
+# New line
+end_of_line = crlf
+charset = utf-8
+
+##############################
+# StyleCop Analyzers Rules
+##############################
+
+# Documentation rules
+dotnet_diagnostic.SA1600.severity = warning   # Elements must be documented
+dotnet_diagnostic.SA1601.severity = warning   # Partial elements must be documented
+dotnet_diagnostic.SA1602.severity = warning   # Enumeration items must be documented
+dotnet_diagnostic.SA1604.severity = warning   # Element documentation must have summary
+dotnet_diagnostic.SA1606.severity = warning   # Element documentation must have value tag
+dotnet_diagnostic.SA1607.severity = warning   # Accessors must be documented
+dotnet_diagnostic.SA1611.severity = warning   # Element parameters must be documented
+dotnet_diagnostic.SA1615.severity = warning   # Return value must be documented
+dotnet_diagnostic.SA1618.severity = warning   # Generic type parameters must be documented
+dotnet_diagnostic.SA1633.severity = none   # File must have header
+
+# Optional: disable warnings you don't want
+# dotnet_diagnostic.SA1633.severity = none
+
+# Naming conventions
+dotnet_diagnostic.SA1300.severity = warning   # Element must begin with upper-case letter
+dotnet_diagnostic.SA1309.severity = warning   # Field names must not begin with underscore
+
+# Ordering rules
+dotnet_diagnostic.SA1200.severity = warning   # Using directives must be placed correctly
+dotnet_diagnostic.SA1210.severity = warning   # Using directives must be ordered alphabetically
